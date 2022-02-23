@@ -1,0 +1,335 @@
+<html lang="en">
+
+<!-- Mirrored from incognitothemes.com/torneo/home-classic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Dec 2018 06:48:11 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Designsninja">
+<!-- description -->
+<meta name="description" content="Torneo is creative agency, corporate, simple and clean template, Based on Bootstrap responsive multipurpose agency and portfolio HTML5 template with 28 unique home page demos">
+<!-- keywords -->
+<meta name="keywords" content="classic, revolution slider, business, particles, portfolio, one page, bootstrap responsive, start-up, ui/ux, html5, css3, studio, branding, creative design, multipurpose, parallax, personal, masonry, grid, coming soon, carousel, career">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+
+<link rel="shortcut icon" href=" assets/images/favicon.ico ">
+
+<!-- Core Style Sheets -->
+<link rel="stylesheet" href=" assets/css/master.css ">
+<!-- Responsive Style Sheets -->
+<link rel="stylesheet" href=" assets/css/responsive.css ">
+<!-- Revolution Style Sheets -->
+<link rel="stylesheet" type="text/css" href=" revolution/css/settings.css ">
+<link rel="stylesheet" type="text/css" href=" revolution/css/layers.css ">
+<link rel="stylesheet" type="text/css" href=" revolution/css/navigation.css ">
+<!--== Javascript Plugins ==-->
+<script src=" assets/js/jquery.min.js "></script>
+<script src=" assets/js/smoothscroll.js "></script>
+<script src=" assets/js/plugins.js "></script>
+<script src=" assets/js/master.js "></script>
+
+<!-- Revolution js Files -->
+<script type="text/javascript" src=" revolution/js/jquery.themepunch.tools.min.js "></script>
+<script type="text/javascript" src=" revolution/js/jquery.themepunch.revolution.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.actions.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.carousel.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.kenburn.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.layeranimation.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.migration.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.navigation.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.parallax.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.slideanims.min.js "></script>
+<script type="text/javascript" src=" revolution/js/revolution.extension.video.min.js "></script>
+<!--== Javascript Plugins End ==-->
+
+</head>
+<body>
+
+<!--== Wrapper Start ==-->
+<div class="wrapper">
+  <nav class="navbar navbar-default navbar-fixed white bootsnav on no-full">
+  	<!--== Start Top Search ==-->
+    <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="icofont icofont-close"></i></a>
+      <div id="fullscreen-search-wrapper">
+        <form method="get" id="fullscreen-searchform" style="top: 430.5px;">
+          <input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input" class="search-bar-top">
+          <i class="fullscreen-search-icon icofont icofont-search">
+          <input value="" type="submit">
+          </i>
+        </form>
+      </div>
+    </div>
+    <!--== End Top Search ==-->
+    <div class="container">
+      <!--== Start Atribute Navigation ==-->
+      
+      <!--== End Atribute Navigation ==-->
+      <!-- <a class=""><span>Extra Small <i class="tr-icon icofont icofont-ui-rating"></i></span></a> -->
+      <!-- <a class="btn btn-md btn-warning btn-square margin-left-auto margin-right-auto display-table-sm">Warning Button</a>s -->
+      <!-- <a class="btn btn-xs btn-light margin-left-auto margin-right-auto display-table-sm">Extra Small <i class="icofont icofont-ui-rating"></i></a> -->
+      <!-- btn btn-md btn-info btn-square margin-left-auto margin-right-auto display-table-sm">Info Button</a> -->
+      <!--== Start Header Navigation ==-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
+        <div class="logo"> <a href="  home "> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
+      </div>
+      <!--== End Header Navigation ==-->
+
+      <!--== Collect the nav links, forms, and other content for toggling ==-->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+          <li class="dropdown megamenu-fw"> <a href="  home ">Home</a></li>
+          <li class="dropdown"> <a href="  contact ">Contact</a></li>
+          <li class="dropdown megamenu-fw"> <a href="  designdev ">Bike Path</a></li>
+          {% if user.is_authenticated %}
+          <li class="dropdown"><a href="  logout ">Logout</a></li>
+          {% else %}
+          <li class="dropdown"><a href="  login ">Login</a></li>
+          <li class="dropdown"> <a href="  signup ">Register</a></li>
+          {% endif %}
+      </div>
+      <!--== /.navbar-collapse ==-->
+    </div>
+  </nav>
+    
+  
+
+{% block content %}
+
+{% extends 'base.html 
+<!-- templates/home.html -->
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="default-bg">
+  <div class="col-md-6 col-sm-12 bg-flex bg-flex-right">
+    <div class="bg-flex-holder bg-flex-cover" style="background-image: url( assets/images/bg-right-img-12.jpg );"></div>
+  </div>
+  <div class="container-fluid">
+    <div class="col-md-6 col-sm-12">
+      <div class="col-inner spacer white-color">
+        <h1 class="play-font font-50px mt-0 font-700">Desirable Digital Experiences</h1>
+        <hr class="white-bg left-line">
+        <h5 class="roboto-font font-600 font-20px mt-20">We design a high range of digital services, promoting themes and businesses through<br> their websites and web advertising.</h5>
+        <p class="mt-30"><a class="btn btn-lg btn-light-outline btn-circle">View Works</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--== Features Start ==-->
+<section class="grey-bg" id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-8 col-xs-12 centerize-col text-center">
+        <h3 class="mt-0 default-color font-700 play-font font-italic">Media That Matters</h3>
+        <h2 class="mt-0 font-700">Brand Builders &amp; Storytellers.</h2>
+        <p class="mt-30 font-300 font-20px line-height-30 play-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim urna, accumsan quis erat nec, condimentum laoreet nulla. Pellentesque porttitor est eu arcu condimentum aliquet non id felis.</p>
+      </div>
+    </div>
+    <div class="row mt-50">
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-40 mb-30 feature-box text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <i class="icon-tools font-40px dark-color fade-icon white-bg-icon circle-icon"></i>
+        <h3 class="mt-10 font-700 play-font">Branding</h3>
+        <p class="font-400 play-font">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-40 mb-30 feature-box text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+        <i class="icon-lightbulb font-40px dark-color fade-icon white-bg-icon circle-icon"></i>
+        <h3 class="mt-10 font-700 play-font">Marketing</h3>
+        <p class="font-400 play-font">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-40 mb-30 feature-box text-center wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+        <i class="icon-desktop font-40px dark-color fade-icon white-bg-icon circle-icon"></i>
+        <h3 class="mt-10 font-700 play-font">Development</h3>
+        <p class="font-400 play-font">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-40 mb-30 feature-box text-center wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+        <i class="icon-pencil font-40px dark-color fade-icon white-bg-icon circle-icon"></i>
+        <h3 class="mt-10 font-700 play-font">Web Design</h3>
+        <p class="font-400 play-font">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-40 mb-30 feature-box text-center wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+        <i class="icon-pictures font-40px dark-color fade-icon white-bg-icon circle-icon"></i>
+        <h3 class="mt-10 font-700 play-font">Social Media</h3>
+        <p class="font-400 play-font">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-40 mb-30 feature-box text-center wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+        <i class="icon-genius font-40px dark-color fade-icon white-bg-icon circle-icon"></i>
+        <h3 class="mt-10 font-700 play-font">Research</h3>
+        <p class="font-400 play-font">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--== Features End ==-->
+
+<!--== Who We Are Start ==-->
+<section class="white-bg">
+  <div class="container">
+    <div class="row">
+          <div class="col-sm-8 section-heading text-center">
+                    <h1 class="font-700 roboto-font">What We Do</h1>
+          <hr class="center_line default-bg">
+          <h5 class="roboto-font font-300 font-20px">Whether you're building a simple prototype or a business-critical product, And We have Developers, designers, and happy clients.</h5>
+              </div>
+        <div class="col-sm-8 centerize-col text-center">
+          <div class="video-box mt-50">
+              <img class="img-responsive" src=" assets/images/about-video-img-2.jpg " alt="">
+              <div class="video-box_overlay">
+                <div class="center-layout">
+                  <div class="v-align-middle"> <a class="popup-youtube" href="https://www.youtube.com/watch?v=sU3FkzUKHXU">
+                    <div class="play-button"><i class="tr-icon ion-android-arrow-dropright"></i> </div>
+                    </a> </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!--== Who We Are End ==-->
+
+<!--== Counter Start ==-->
+<section class="parallax-bg fixed-bg" data-parallax-bg-image=" assets/images/background/parallax-bg-dark.jpg " data-parallax-speed="0.8" data-parallax-direction="up" style="position: relative; background: transparent; overflow: hidden; z-index: 1;"><div class="parallax-inner" style="position: absolute; background-image: url(&quot;assets/images/background/parallax-bg-6.jpg&quot;); background-position: center center; background-repeat: no-repeat; background-size: cover; width: 692px; height: 2226px; transform: translate3d(0px, -1007px, 0px); transition: transform 100ms ease 0s; z-index: -1;"></div>
+  <div class="parallax-overlay"></div>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-8 section-heading white-color">
+            <h4 class="text-uppercase mt-0">Counter Style 02</h4>
+        </div>
+      </div>
+      <div class="row counter-type-4 mt-50 row-flex flex-center">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="counter-wrap wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+            <div class="pull-left">
+              <i class="icon-paintbrush white-color font-40px"></i>
+            </div>
+            <div class="pull-left pl-20">
+              <h2>
+                <span class="counter font-600 white-color">3521</span>
+              </h2>
+                <div class="line default-bg"></div>
+                <span class="white-color text-uppercase">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="counter-wrap wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+              <div class="pull-left">
+                 <i class="icon-speedometer white-color font-40px"></i>
+              </div>
+              <div class="pull-left pl-20">
+              <h2><span class="counter font-600 white-color">974</span></h2>
+              <div class="line default-bg"></div>
+              <h3 class="white-color text-uppercase">Cups of Coffee</h3>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="counter-wrap wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+             <div class="pull-left">
+                <i class="icon-genius white-color font-40px"></i>
+              </div>
+              <div class="pull-left pl-20">
+        <h2><span class="counter font-600 white-color">634</span></h2>
+        <div class="line default-bg"></div>
+        <h3 class="white-color text-uppercase">Project Delivered</h3>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="counter-wrap wow fadeInRight" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
+            <div class="pull-left">
+              <i class="icon-strategy white-color font-40px"></i>
+            </div>
+            <div class="pull-left pl-20">
+        <h2><span class="counter font-600 white-color">449</span></h2>
+        <div class="line default-bg"></div>
+        <h3 class="white-color text-uppercase">Awards Won</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!--== Counter End ==-->
+
+
+
+<section class="white-bg">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 section-heading">
+            <h4 class="text-uppercase mt-0">Clients Style 01</h4>
+        </div>
+      </div>
+      <div class="row mt-50">
+        <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+          <div class="client-logo"> <img class="img-responsive" src=" assets/images/clients/1.png " alt="01"> </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+          <div class="client-logo"> <img class="img-responsive" src=" assets/images/clients/2.png " alt="02"> </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+          <div class="client-logo"> <img class="img-responsive" src=" assets/images/clients/3.png " alt="03"> </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
+          <div class="client-logo"> <img class="img-responsive" src=" assets/images/clients/4.png " alt="04"> </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+          <div class="client-logo"> <img class="img-responsive" src=" assets/images/clients/5.png " alt="05"> </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+          <div class="client-logo"> <img class="img-responsive" src=" assets/images/clients/6.png " alt="06"> </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+{% endblock %}
+
+  
+  
+ 
+ 
+{% endblock %}
+
+
+  <!--== Footer Start ==-->
+  <footer class="footer dark-block">
+    
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="copy-right text-left">© 2018 <i class="icon icofont icofont-heart-alt"></i>  All rights reserved</div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <ul class="social-media">
+              <li><a href="#" class="icofont icofont-social-facebook"></a></li>
+      			  <li><a href="#" class="icofont icofont-social-twitter"></a></li>
+      			  <li><a href="#" class="icofont icofont-social-behance"></a></li>
+      			  <li><a href="#" class="icofont icofont-social-dribble"></a></li>
+           	  <li><a href="#" class="icofont icofont-social-linkedin"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--== Footer End ==-->
+
+  <!--== Go to Top  ==-->
+  <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+  <!--== Go to Top End ==-->
+
+</div>
+<!--== Wrapper End ==-->
+
+
+</body>
+
+<!-- Mirrored from incognitothemes.com/torneo/home-classic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Dec 2018 06:51:51 GMT -->
+</html>
